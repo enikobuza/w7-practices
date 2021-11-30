@@ -51,23 +51,25 @@ const formSubmit = (event) => {
 
 const inputEvent = (event) => {
     console.log(event.target.value);
-    document.getElementById("inputValueContent").innerHTML = event.target.value;
+    if (event.target.name === "firstName" ) {
+        document.getElementById("inputValueContent").innerHTML = event.target.value
+    };
 }
 
 function loadEvent() {
-    const root = document.getElementById("root");       //root változó létrehozás
-    root.insertAdjacentHTML("beforeend", formElement);  //hozzárakjuk a formElementet  (position, text);
+    const root = document.getElementById("root");       
+    root.insertAdjacentHTML("beforeend", formElement);  
     root.insertAdjacentHTML("beforeend", `              
         <div id="inputValueContent"></div>
-    `);                                                 //hozzárakjuk az inputValueContentet egy divben
+    `);                                                 
 
-    const form = document.getElementById("form");       //létrehozzuk a form változót (a formElementből)
-    form.addEventListener("submit", formSubmit);        //rárakunk eseményfigyelőt (form elementre a submit esemény formSubmit függvényét)
+    const form = document.getElementById("form");       
+    form.addEventListener("submit", formSubmit);        
 
-    const inputList = form.querySelectorAll("input");   //létrehozunk egy inputList változót (az összes input (type, name) kerül bele)
+    const inputList = form.querySelectorAll("input");   //inputList változó(az összes input (type, name) kerül bele)
     for (const input of inputList) {
         input.addEventListener("input", inputEvent);
-    }                                                   //for ciklussal végigmegyünk az inputList input elemein és teszünk rá egy eseményfigyelőt (input eseményre az inputEvent függvényt)
+    }                                                   
 
 }
 

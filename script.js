@@ -61,8 +61,9 @@ const formElement = `
             ${inputElement("file", "profilePic", "Profilképed")}
             ${inputElement("checkbox", "newsLetter", "Hírlevelet kérek")}
             ${inputElement("checkbox", "terms", "Elfogadod a felhasználási feltételeket?")}
-            ${selectElement("select", "where", "Hol hallottál rólunk?", ["internetről", "ismerőstől", "egyéb"])}
-            <button>OK</button>
+            ${selectElement("select", "where", "Hol hallottál rólunk?", ["válassz az alábbiakból", "internetről", "ismerőstől", "egyéb"])}
+            <button>CREATE ACCOUNT</button>
+            <div></div>
         </form>
 `;
 
@@ -82,13 +83,8 @@ const inputEvent = (event) => {
         document.getElementById("inputValueContent").innerHTML = event.target.value
     };
 }
-/*
-function addImg() { 
-    let img = document.createElement('img'); 
-    img.src = "/pic01.png";
-    document.getElementById("form").appendChild(img);
-}
-*/
+
+
 
 function loadEvent() {
     const root = document.getElementById("root");    
@@ -98,8 +94,7 @@ function loadEvent() {
     `);                                                 
     
     const form = document.getElementById("form");       
-    form.addEventListener("submit", formSubmit);        
-    //form.insertAdjacentHTML("beforeend", addImg);  
+    form.addEventListener("submit", formSubmit);
 
     const inputList = form.querySelectorAll("input");   //inputList változó(az összes input (type, name) kerül bele)
     for (const input of inputList) {

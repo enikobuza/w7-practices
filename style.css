@@ -181,7 +181,7 @@ input:hover {
 
 @media screen and (max-width: 650px) {
   form#form {
-    max-width: 450px;
+    min-width: 450px;
     font-size: 60%;
   }
   select {

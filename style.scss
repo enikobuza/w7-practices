@@ -57,6 +57,7 @@ h1 {
   color: rgb(127, 103, 77);
   font-size: 70px;
   margin-bottom: 10px;
+  transform: translate(-30%, 0%);
   -webkit-text-stroke: 1px rgb(127, 103, 77);
   text-shadow: 6px 6px 10px white;
 
@@ -64,6 +65,7 @@ h1 {
 
 #form {
   margin: auto;
+  transform: translate(-10%, 0%);
   height: 100%;
   width: fit-content;
   

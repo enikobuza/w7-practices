@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  -moz-appearance: none !important;
+       appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0;
+}
+
+body {
+  background-color: #77992d;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px 20px 20px;
+  padding: 40px;
+}
+
+h1 {
+  color: white;
+  font-size: xxx-large;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#form {
+  margin: auto;
+  height: 100vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px;
+  line-height: 40px;
+  background-color: white;
+  color: #7f674d;
+  font-family: 'Merriweather', serif;
+}
+
+input[type=text],
+input[type=email] {
+  border: 1px solid #aaaaaa;
+  -webkit-box-shadow: 2px 2px 4px gray;
+          box-shadow: 2px 2px 4px gray;
+  width: 100%;
+  height: 35px;
+}
+
+input[type=file] {
+  height: 35px;
+  opacity: 0;
+}
+
+input[type=checkbox] {
+  height: 35px;
+  width: 35px;
+  border: 1px solid #aaaaaa;
+  color: #7f674d;
+  -webkit-box-shadow: 2px 2px 4px gray;
+          box-shadow: 2px 2px 4px gray;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  background-color: #7f674d;
+  color: white;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 2px 10px  gray;
+          box-shadow: 2px 2px 10px  gray;
+}
+
+form :nth-child() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

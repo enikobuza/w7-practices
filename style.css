@@ -176,7 +176,7 @@ select {
 
 select:hover,
 input:hover {
-  background-color: whitesmoke;
+  background-color: #a8b9a8;
 }
 
 @media screen and (max-width: 650px) {
